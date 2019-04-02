@@ -20,9 +20,11 @@ class School
  end
  
  def sort
+   new_hash = {}
    @roster.sort_by do |x, y|
-     x 
+     new_hash[x] = y.sort
    end
+   new_hash
  end
 
 end
